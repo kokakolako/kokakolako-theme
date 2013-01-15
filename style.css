@@ -1160,14 +1160,6 @@ werden.
 	text-shadow: 1px 1px 0px #AEAEAE;
 }
 
-.commentDialog form {
-	margin: 10px;
-}
-
-.commentDialog form p {
-	margin: 0;
-}
-
 .commentDialog form a {
 	color: #F00;
 	transition-property: color, background-color;
@@ -1186,28 +1178,13 @@ werden.
 }
 
 .commentDialog form textarea {
-	width: 100%;
-	margin: 0;
-	padding: 0;
 	max-width: 100%;
-}
-
-.commentDialog form .loginData {
-	margin-bottom: 10px;
 }
 
 .commentDialog form .btn {
 	font-family: "Gentium Book Basic";
 	text-decoration: none;
 	color: #555;
-}
-
-.commentDialog form input {
-	padding: 10px;
-	margin: 20px 0 10px 0;
-	float: right;
-	font-weight: bold;
-	font-size: 20px;
 }
 
 /* Anpassung der Footer-Icons an die Bildschirmbreite
@@ -1221,6 +1198,17 @@ werden.
 		width: 100px;
 	}
 
+	.commentDialog .userdata {
+		width: 300px;
+		float: left;
+	}
+
+	.commentDialog form input {
+		width: 280px;
+		margin: 10px;
+		padding: 5px;
+	}
+
 }
 
 @media (min-width: 700px) {
@@ -1228,6 +1216,17 @@ werden.
 	.footer-links div img {
 		height: 200px;
 		width: 200px;
+	}
+
+	.commentDialog .userdata {
+		width: 500px;
+		margin: 0 10px;
+	}
+
+	.commentDialog form input {
+		width: 470px;
+		margin: 10px;
+		padding: 5px;
 	}
 
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<title>Slider</title>
+
+<link rel="stylesheet" href="css/nivo-slider.css" media="screen">
+<link rel="stylesheet" href="css/futurico-theme.css" media="screen">
+
+
+<div id="wrapper">
+	<div class="slider-wrapper">
+		<div id="slider" class="nivoSlider">
+			<img src="http://kokakolako.de/wp-content/uploads/2012/04/DSC_0026.jpg" alt="" title="#caption1">
+			<img src="http://kokakolako.de/wp-content/uploads/2012/04/DSC_0026.jpg" alt="" title="#caption2">
+			<img src="http://kokakolako.de/wp-content/uploads/2012/04/DSC_0026.jpg" alt="" title="#caption3">
+			<img src="http://kokakolako.de/wp-content/uploads/2012/04/DSC_0026.jpg" alt="" title="#caption4">
+		</div>
+		<div id="caption1" class="nivo-html-caption">
+			<strong>Bild 1</strong> <em>Some description here</em>
+		</div>
+		<div id="caption2" class="nivo-html-caption">
+			<strong>Bild 2</strong> <em>Some description here</em>
+		</div>
+		<div id="caption3" class="nivo-html-caption">
+			<strong>Bild 3</strong> <em>Some description here</em>
+		</div>
+		<div id="caption4" class="nivo-html-caption">
+			<strong>Bild 4</strong> <em>Some description here</em>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/jquery.nivo.slider.pack.js"></script>
+<script>
+	$(window).load(function() {
+		$('#slider').nivoSlider({
+			effect: 'fade',
+			directionNavHide: false,
+			pauseOnHover: true,
+			captionOpacity: 1,
+			prevText: '<',
+			nextText: '>'
+		});
+	});
+</script>
+

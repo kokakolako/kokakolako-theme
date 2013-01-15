@@ -1,0 +1,112 @@
+/* Tablet (480px - 850px)
+----------------------------------------------
+*/
+
+@media all and (min-width: 480px) and (max-width: 850px)  {
+
+/* Tiles
+---------------------
+*/
+
+.tiles {
+	height: 420px;
+}
+
+.tiles-inner {
+	margin: 0 20px 20px 20px;
+	height: 400px;
+}
+
+.tile {
+	width: 50%;
+	height: 200px;
+}
+
+.tiles div:nth-child(8),
+.tiles div:nth-child(7),
+.tiles div:nth-child(6),
+.tiles div:nth-child(5) {
+	display: none;
+}
+
+/* Main
+---------------------
+*/
+
+.main {
+	width: 100%;
+	float: left;
+}
+
+/* Artikel Design
+---------------------
+*/
+
+.article {
+	margin: 0 20px 20px 20px;
+}
+
+.article h1 {
+	margin: 0px;
+	font-size: 4em;
+}
+
+.about {
+	width: 100%;
+	float: left;
+	margin-bottom: 40px;
+	color: #FFF;
+}
+
+.about img {
+	width: 200px;
+	height: 200px;
+	transition-property: transform;
+		-webkit-transition-property: transform;
+		-moz-transition-property: transform;
+	transition-duration: 0.5s;
+    	-webkit-transition-duration: 0.5s;
+    	-moz-transition-duration: 0.5s;
+}
+
+.about > div {
+	margin: 20px 20px 0 20px;
+}
+
+.about:hover img {
+	-webkit-transform: rotate(-2.5deg);
+	-moz-transform: rotate(-2.5deg);
+	-ms-transform: rotate(-2.5deg);
+	-o-transform: rotate(-2.5deg);
+	transform: rotate(-2.5deg);
+}
+
+/* Single Page Design
+---------------------
+*/
+
+.singlePage {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+}
+
+.singleMeta a{
+	font-size: 1.5em;
+}
+
+.singlePage .commentDialog {
+	margin: 0 20px 20px 20px;
+}
+
+/* Seitenleiste
+---------------------
+*/
+
+.sidebar {
+	width: 30%;
+	float: left;
+	margin-top: 5px;
+}
+
+} /* <-- Ende des Media-Queries */

@@ -1,0 +1,1279 @@
+@charset "utf-8";
+
+/*
+Theme Name: kokakolako
+Theme URI: -
+Description: kokakolako Default Theme
+Version: 2.0
+Author: Niklas Köhler
+Author URI: http://www.kokakolako.de
+*/
+
+/* Grundelemente
+----------------------------------------------
+*/
+
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.2;
+	font-family: "Gentium Book Basic";
+	background: #E6E6E6;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	font-weight: bold;
+}
+
+img {
+	border: 0;
+}
+
+table {
+	border:1px solid #000;
+	color:#000;
+	border-collapse:collapse;
+	width:100%;
+	text-align:center;
+}
+
+table, tr, td, th {
+	margin:0;
+	padding:0;
+}
+
+table tr, table td, table th {
+	border:1px solid #000;
+}
+
+textarea {
+	font-family: "Gentium Book Basic";
+	font-size: 1em;
+}
+
+blockquote {
+	font-weight: bold;
+	font-style: italic;
+	margin: 0 50px;
+	font-size: 1.2em;
+	text-shadow: 1px 1px 0px #AEAEAE;
+}
+
+ul, ol, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.hr {
+	border-top: 1px solid #AEAEAE;
+	width: 99%;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+/* CSS3 Ease-Out wird durchgeführt
+----------------------------------------------
+Damit dieser Effekt wirkt muss zuvor 
+dem Ziel-Objekt folgender CSS3
+Transition Effekt hinzugefügt werden:
+  transition: opacity 1s ease-out;
+Nun kann mittels jQuery über 
+  addClass("ease-out") bzw.
+  removeClass("ease-out")
+das Ziel-Objekt Ein- und Ausgeblendet 
+werden.
+*/
+
+.ease-out {
+	height: auto;
+	opacity: 1;
+}
+
+.navbar ul > li {
+	list-style: none;
+}
+
+/* Korrektur zur Richtigen Anzeige des Headers 
+----------------------------------------------
+*/
+
+@media (min-width: 0) {
+	
+	.header {
+		margin-top: -20px;
+	}
+
+}
+
+@media (min-width: 980px) {
+	
+	.header {
+		margin-top: 41px;
+	}
+
+}
+
+/* Wrapper
+----------------------------------------------
+*/
+
+.wrapper {
+	min-width: 360px;
+}
+
+/* Header
+----------------------------------------------
+*/
+
+.header {
+	margin-bottom: 20px;
+	position: relative;
+	padding: 30px 0 30px 0;
+	background: #F00 url(http://kokakolako.de/wp-content/themes/kokakolako/img/bubble-texture.png);
+	box-shadow: inset 0 0 20px #555;
+		-moz-box-shadow: inset 0 0 20px #000;
+		-webkit-box-shadow: inset 0 0 20px #000;
+	transition-property: background-color;
+		-webkit-transition-property: background-color;
+		-moz-transition-property: background-color;
+	transition-duration: 1s;
+	    -webkit-transition-duration: 1s;
+	    -moz-transition-duration: 1s;
+	transition-delay: 0.2s;
+	    -webkit-transition-delay: 0.2s;
+	    -moz-transition-delay: 0.2s;
+}
+
+.header:hover {
+	background-color: #555;
+	cursor: pointer;
+}
+
+.header::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.header img {
+	display: block;
+	width: 80%;
+	height: auto;
+	margin: auto;
+	max-width: 900px;
+	max-height: 100px;
+}
+
+/* Tiles
+----------------------------------------------
+*/
+
+.tiles {
+	float: left;
+	width: 100%;
+}
+
+.tiles-inner {
+	margin: 0 20px 20px 20px;
+	box-shadow: 0 0 20px #555;
+		-moz-box-shadow: 0 0 20px #555;
+		-webkit-box-shadow: 0 0 20px #555;
+}
+
+.tile {
+	background: #F00;
+	float: left;
+}
+
+.tile:hover {
+	padding: 0;
+	float: left;
+	cursor: pointer;
+}
+
+.tile h1 {
+	position: relative;
+	text-align: right;
+	margin: 0 5px 0 5px;
+	width: auto;
+	cursor: pointer;
+}
+
+.tile h1 a {
+	color: rgba(1, 1, 1, 0.6);
+	text-decoration: none;
+	font-family: "Titillium Web";
+}
+
+.tile div {
+	background: rgba(1, 1, 1, 0);
+	width: 100%;
+	height: 100%;
+	transition-property: background-color;
+		-webkit-transition-property: background-color;
+		-moz-transition-property: background-color;
+	transition-duration: 1s;
+    	-webkit-transition-duration: 1s;
+    	-moz-transition-duration: 1s;
+    box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.3);
+    	-moz-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.3);
+			-webkit-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.3);
+}
+
+.tile div:hover {
+	background: rgba(1, 1, 1, 0.4);
+}
+
+/* Artikel
+----------------------------------------------
+*/
+
+.post {
+	margin: 10px;
+	overflow: hidden;
+}
+
+.singlePage .post {
+	padding: 10px;
+}
+
+.post p {
+	font-size: 1em;
+	margin: 5px 0;
+}
+
+.article {
+	box-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1);
+		-webkit-box-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1);
+		-moz-box-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1);
+	border: solid 1px rgba(0, 0, 0, 0.16);
+	display: block;
+	color: #555;
+	background: #E6E6E6;
+	float: left;
+	overflow: hidden;
+	transition-property: box-shadow;
+		-webkit-transition-property: box-shadow;
+		-moz-transition-property: box-shadow;
+    transition-duration: 0.2s;
+    	-webkit-transition-duration: 0.1s;
+    	-moz-transition-duration: 0.1s;
+}
+
+.article:hover {
+	background: #DDD;
+	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
+		-webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
+		-moz-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
+
+}
+
+.article:hover .btn {
+	border: solid 1px #B8B8B8;
+	box-shadow: inset 1px 1px 0 #FFF;
+		-webkit-box-shadow: inset 1px 1px 0 #FFF;
+		-moz-box-shadow: inset 1px 1px 0 #FFF;
+}
+
+ .article h1 {
+ 	font-family: "Titillium Web";
+ 	margin: 5px 5px 0 5px;
+ 	font-weight: 700;
+ 	line-height: 1em;
+ }
+
+.article h1 a {
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #AEAEAE;
+}
+
+.article h1 a:hover {
+	color: #555;
+}
+
+.article h2 {
+	font-size: 1.8em;
+	color: #F00;
+	margin: 0;
+	font-family: "Titillium Web";
+	text-shadow: 1px 1px 0px #AEAEAE;
+	line-height: 1em;
+}
+
+.article a {
+	color: #F00;
+	transition-property: color;
+		-webkit-transition-property: color;
+		-moz-transition-property: color;
+    transition-duration: 0.5s;
+    	-webkit-transition-duration: 0.5s;
+    	-moz-transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    	-webkit-transition-delay: 0.1s;
+    	-moz-transition-delay: 0.1s;
+}
+
+.article p {
+	margin: 10px 0;
+	line-height: 1.2em;
+	float: left;
+}
+
+.article .attachment-thumbnail {
+	border: 15px solid #FFF;
+	float: left;
+	margin: 20px 10px 10px 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.article .intro {
+	font-size: 1.2em;
+	font-family: "Titillium Web";
+}
+
+.article ul, ol, li {
+	list-style:	square inside;
+}
+
+.article a:hover {
+	color: #000;
+}
+
+/* Über mich
+----------------------------------------------
+*/
+
+.about {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.about > div {
+	padding: 10px;
+	background: #555;
+	overflow: hidden;
+	box-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1);
+			-webkit-box-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1);
+			-moz-box-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1);
+	border: solid 1px rgba(0, 0, 0, 0.16);		
+}
+
+.about h2 {
+	font-family: "The Girl Next Door";
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 2.5em
+}
+
+.about p {
+	margin: 0;
+	padding: 0;
+}
+
+.about img {
+	width: 100px;
+	float: left;
+	margin: 5px 10px 0 0;
+	border: 10px solid #FFF;
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	transition-property: transform;
+		-webkit-transition-property: transform;
+		-moz-transition-property: transform;
+    transition-duration: 0.5s;
+	    -webkit-transition-duration: 0.5s;
+	    -moz-transition-duration: 0.5s;
+}
+
+.about:hover img {
+	transform: rotate(-2.5deg);
+		-webkit-transform: rotate(-2.5deg);
+		-moz-transform: rotate(-2.5deg);
+		-ms-transform: rotate(-2.5deg);
+		-o-transform: rotate(-2.5deg);
+}
+
+.about:hover .portfolio-link {
+	transform: rotate(2.5deg);
+		-webkit-transform: rotate(2.5deg);
+		-moz-transform: rotate(2.5deg);
+		-ms-transform: rotate(2.5deg);
+		-o-transform: rotate(2.5deg);
+}
+
+/* Social-Media Integration
+----------------------------------------------
+*/
+
+.social {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.social > div {
+	margin: 0 20px;
+	overflow: hidden;
+	height: auto;
+}
+
+.singlePage .btn {
+	background: #DDD;
+}
+
+.singlePage .social {
+	margin: 0;
+	width: 100%;
+}
+
+.singlePage .social > div {
+	margin: 0 20px;
+}
+
+.singlePage .social > div h2 {
+	margin: 0;
+	font-size: 2.5;
+	padding: 5px 0;
+	color: #555;
+	font-family: "The Girl Next Door"
+}
+
+.facebook, .twitter, .googleplus {
+	width: 33%;
+	float: left;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	transition-property: background-color;
+		-webkit-transition-property: background-color;
+		-moz-transition-property: background-color;
+	transition-duration: 1s;
+    	-webkit-transition-duration: 1s;
+    	-moz-transition-duration: 1s;
+}
+
+.facebook:hover, .twitter:hover, .googleplus:hover {
+	background: #555;
+	cursor: pointer;
+}
+
+.facebook {
+	background: #3d549e;
+}
+
+.twitter {
+	background: #52ade5;
+	width: 34%;
+}
+
+.googleplus {
+	background: #df3833;
+}
+
+@media (min-width: 930px) {
+
+	.facebook a div, .twitter a div, .googleplus a div {
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+	}
+
+	.facebook a div {
+		background: url(http://kokakolako.de/wp-content/themes/kokakolako/img/social-media/facebook.png);
+	}
+
+	.twitter a div {
+		background: url(http://kokakolako.de/wp-content/themes/kokakolako/img/social-media/twitter.png);
+	}
+
+	.googleplus a div {
+		background: url(http://kokakolako.de/wp-content/themes/kokakolako/img/social-media/plusone.png);
+	}
+
+}
+
+@media all and (min-width: 480px) and (max-width: 930px) {
+
+	.facebook a div, .twitter a div, .googleplus a div {
+		width: 50px;
+		height: 50px;
+		margin: 0 auto;
+	}
+
+	.facebook a div {
+		background: url(http://kokakolako.de/wp-content/themes/kokakolako/img/social-media/facebook_small.png);
+	}
+
+	.twitter a div {
+		background: url(http://kokakolako.de/wp-content/themes/kokakolako/img/social-media/twitter_small.png);
+	}
+
+	.googleplus a div {
+		background: url(http://kokakolako.de/wp-content/themes/kokakolako/img/social-media/plusone_small.png);
+	}
+
+}
+
+/* Popular Posts
+----------------------------------------------
+*/
+
+.popularPosts {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.popularPosts > div {
+	padding: 10px;
+	margin: 20px 20px 0 20px;
+	background: #555;
+	overflow: hidden;
+	box-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1);
+			-webkit-box-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1);
+			-moz-box-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1);
+	border: solid 1px rgba(0, 0, 0, 0.16);		
+}
+
+.popularPosts > div h2 {
+	font-family: "The Girl Next Door";
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 2.5em
+}
+
+.popularPosts > div ul {
+	width: 80%;
+	list-style: none;
+	margin: 0 10%;
+}
+
+.popularPosts > div ul li {
+	margin: 10px 0;
+}
+
+.popularPosts > div ul li a {
+	color: #FFF;
+	font-weight: normal;
+	text-decoration: none;
+		transition-property: color;
+		-webkit-transition-property: color;
+		-moz-transition-property: color;
+    transition-duration: 0.3s;
+    	-webkit-transition-duration: 0.3s;
+    	-moz-transition-duration: 0.3s;
+}
+
+.popularPosts > div ul li a:hover {
+	color: #000;
+}
+
+.popularPosts > div ul li:nth-child(2n) a {
+	color: #CCC;
+}
+
+.popularPosts > div ul li:nth-child(2n) a:hover {
+	color: #000;
+}
+
+/* Post-Meta
+----------------------------------------------
+*/
+
+.screen-reader-text {
+	display: none;
+}
+
+.postMeta {
+	color: #FFF;
+	font-family: "Titillium Web";
+	width: 100%;
+	overflow: hidden;
+}
+
+.postMeta a{
+	float: left;
+	color: #FFF;
+	margin: 5px;
+	font-size: 20px;
+	text-decoration: none;
+	background: #F00;
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow: 1px 1px 0px #AEAEAE;
+	transition-property: background-color;
+		-webkit-transition-property: background-color;
+		-moz-transition-property: background-color;
+    transition-duration: 0.5s;
+    	-webkit-transition-duration: 0.5s;
+    	-moz-transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    	-webkit-transition-delay: 0.1s;
+    	-moz-transition-delay: 0.1s;
+}
+
+.postMeta a:hover{
+	color: #FFF;
+	background-color: #555;
+}
+
+.postMeta > ul li{
+	list-style: none;
+}
+
+.commentCounter {
+	font-family: sans-serif;
+	float: right;
+	background-color: #F00;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	margin-top: 5px;
+	transition-property: background-color;
+		-webkit-transition-property: background-color;
+		-moz-transition-property: background-color;
+    transition-duration: 0.5s;
+    	-webkit-transition-duration: 0.5s;
+    	-moz-transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    	-webkit-transition-delay: 0.1s;
+    	-moz-transition-delay: 0.1s;
+    box-shadow: 1px 1px 0px #AEAEAE;
+}
+
+.commentCounter:hover {
+	background-color: #555;
+	cursor: pointer;
+}
+
+.commentCounter a {
+	background-color: transparent;
+	margin: 0 10px 0 10px;
+	box-shadow: none;
+}
+
+.commentCounter a:hover {
+	background-color: transparent;
+}
+
+/* Sidebar
+----------------------------------------------
+*/
+
+.sidebar {
+	display: none;
+}
+
+.widget {
+	background-color: #A4A4A4;
+	overflow: hidden;
+	margin-left: 5px;
+	padding: 10px;
+	color: #FFF;
+}
+
+.widget a {
+	color: #FFF;
+}
+
+.widget table {
+	color: #FFF;
+}
+
+/* Buttons
+----------------------------------------------
+*/
+
+.article .btn {
+	color: #555;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 5px;
+	background: #E6E6E6;
+	float: right;
+	border: solid 1px rgba(0, 0, 0, 0.16);
+	box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.7), 1px 1px 0px rgba(255, 255, 255, 0.7);
+			-webkit-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.7), 1px 1px 0px rgba(255, 255, 255, 0.7);
+			-moz-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.7), 1px 1px 0px rgba(255, 255, 255, 0.7);
+}
+
+.article .btn:hover {
+	color: #555;
+	cursor: pointer;
+}
+
+.btn {
+	color: #555;
+	font-weight: normal;
+	font-family: "Gentium Book Basic"
+	text-decoration: none;
+	padding: 5px;
+	font-size: 15px;
+	background: #E6E6E6;
+	border: solid 1px rgba(0, 0, 0, 0.16);
+	box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.7), 1px 1px 0px rgba(255, 255, 255, 0.7);
+			-webkit-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.7), 1px 1px 0px rgba(255, 255, 255, 0.7);
+			-moz-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.7), 1px 1px 0px rgba(255, 255, 255, 0.7);
+}
+
+.btn:hover {
+	color: #555;
+	cursor: pointer;
+	border: solid 1px #B8B8B8;
+	box-shadow: inset 1px 1px 0 white, 1px 1px 1px rgba(0, 0, 0, 0.09);
+		-webkit-box-shadow: inset 1px 1px 0 white, 1px 1px 1px rgba(0, 0, 0, 0.09);
+		-moz-box-shadow: inset 1px 1px 0 #fff, 1px 1px 1px rgba(0,0,0,0.09);
+}
+
+/* Aussehen der Datumsleiste über jeden einzelnen Artikel
+----------------------------------------------
+*/
+
+.date {
+	background-color: #A4A4A4;
+	color: #FFF;
+	padding: 5px;
+	text-align: right;
+	font-size: 2em;
+	font-family: "Titillium Web";
+}
+
+/* Aussehen der Bilder mit jeweiliger Bildcaption und Lizenz
+----------------------------------------------
+*/
+
+.picture-wrapper {
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+
+.picture {
+	margin: 10px auto 10px auto;
+    display: block;
+    float: left;
+    padding: 0;
+    border: 15px solid #FFF;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+ }
+
+.picture img {
+	position: relative;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.tint {
+	position: relative;
+	float: left;
+	margin: 0 auto 0 auto;
+	width: auto;
+	cursor: pointer;
+}
+
+.tint p {
+	margin: 0;
+	padding: 5px 0 5px 0;
+	z-index: 1;
+}
+
+.tint:hover:after {
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	content: "";
+	display: block;
+	padding: 0;
+	background: rgba(1, 1, 1, 0.5);
+	overflow: hidden;
+}
+
+.tint:hover .caption {
+	display: block;
+	position: absolute; bottom: 0; left: 0;
+	width: 100%;
+	font-size: 30px;
+	background: rgba(1, 1, 1, 0.7);
+	color: #FFF;
+	text-align: center;
+}
+
+.caption {
+	display: none;
+}
+
+.tint:hover:before {
+	background: none;
+}
+
+/* Footer
+----------------------------------------------
+*/
+
+.footer {
+	width: 100%;
+	float: left;
+	color: #FFF;
+}
+
+.footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #000;
+}
+
+.footer h1 {
+	text-align: center;
+}
+
+.footer-links {
+	width: 100%;
+	padding: 30px 0 30px 0;
+	float: left;
+	background: #F00 url(http://kokakolako.de/wp-content/themes/kokakolako/img/bubble-texture.png);
+	box-shadow: inset 0 0 20px #555;
+		-moz-box-shadow: inset 0 0 20px #000;
+		-webkit-box-shadow: inset 0 0 20px #000;
+}
+
+.footer-links div {
+	width: 33%;
+	float: left;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	border: none;
+}
+
+.footer-links div img {
+	margin: 0 auto 0 auto;
+	display: block;
+	border-radius: 10px;
+}
+
+.footer-links div:first-child img:hover, .footer-links div:last-child img:hover {
+	cursor: pointer;
+}
+
+.footer-links div a:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+.footer-licenses {
+	padding: 10px;
+	float: left;
+	color: #555;
+}
+
+.footer-licenses:hover {
+	cursor: default;
+}
+
+.footer-licenses a {
+	color: #555;
+	font-weight: bold;
+}
+
+.footer-licenses a:hover {
+	color: #F00;
+	cursor: pointer;
+}
+
+.footer-licenses li {
+	margin: 0 10px 0 10px;
+}
+
+/* Single Page Design
+---------------------------------------------
+*/
+
+/* Single Page Article Layout
+---------------------
+*/
+
+.singlePage .postTitle {
+	margin-bottom: 0;
+}
+
+.singlePage .post {
+	background: none;
+}
+
+.singlePage .about {
+	margin: 0 10px 20px 0;
+}
+
+.singlePage .social {
+	margin-bottom: 20px;
+}
+
+.singlePage .about h2 {
+	color: #FFF;
+}
+
+.singlePage .about img {
+	width: 180px;
+	height: 180px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+/* Single Page Meta Informations
+---------------------
+*/
+
+.singleMeta {
+	display: block;
+	width: 100%;
+	float: left;
+	color: #FFF;
+	font-family: "Titillium Web";
+}
+
+.singleMeta a{
+	float: left;
+	color: #FFF;
+	margin: 5px;
+	text-decoration: none;
+	background: #F00;
+	border-radius: 5px;
+	box-shadow: 1px 1px 0px #AEAEAE;
+	padding: 5px;
+	transition-property: background;
+		-webkit-transition-property: background;
+		-moz-transition-property: background;
+    transition-duration: 0.5s;
+    	-webkit-transition-duration: 0.5s;
+    	-moz-transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    	-webkit-transition-delay: 0.1s;
+    	-moz-transition-delay: 0.1s;
+}
+
+.singleMeta a:hover{
+	color: #FFF;
+	background: #555;
+}
+
+/* Picture-Stack - Link zu meinem Portfolio
+---------------------
+*/
+
+.singlePage .article {
+	background: #DDD;
+	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
+		-webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
+		-moz-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
+}
+
+.singlePage .portfolio-link {
+	width: 180px;
+	height: 180px;
+	border: 10px solid #FFF;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	background: #FFF;
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	transition-property: transform, margin;
+		-webkit-transition-property: transform, margin;
+		-moz-transition-property: margin, transform;
+    transition-duration: 0.5s;
+	    -webkit-transition-duration: 0.5s;
+	    -moz-transition-duration: 0.5s;
+}
+
+.singlePage .stack {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	float: left;
+	margin: 5px 10px 0 0;
+	padding: 0;
+	border: none;
+	box-shadow: none;
+}
+
+.singlePage .portfolio-link {
+	text-align: right;
+}
+
+.singlePage .portfolio-link a {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.singlePage .stack a {
+	font-size: 25px;
+	text-decoration: none;
+	color: #555;
+}
+
+.singlePage .stack a:hover {
+	color: #F00;
+}
+
+.singlePage .about .stack:hover .portfolio-link {
+	margin-left: 150px;
+	transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+}
+
+/* Kommentare
+---------------------
+*/
+
+.commentList {
+	float: left;
+	width: 100%;
+	margin: 30px 0 20px 0;
+	overflow: hidden;
+}
+
+.comment-wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+/*	background: #DDD;
+	
+	color: #555; */
+
+.comment {
+	float: left;
+	background: #DDD;
+	width: 90%;
+	margin: 0 5% 20px 5%;
+	min-height: 100px;
+	overflow: hidden;
+	border: solid 1px rgba(0, 0, 0, 0.16);
+	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
+		-webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
+		-moz-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
+}
+
+.comment p {
+	margin: 20px;
+	padding: 0;
+}
+
+.comment .date {
+	font-size: 1.5em;
+	text-align: left;
+	padding: 5px;
+}
+
+.comment .date span {
+	font-size: 0.6em;
+	color: #555;
+}
+
+
+.avatar {
+	padding: 0;
+	float: left;
+	margin: 5px;
+}
+
+.avatar img {
+	border-radius: 50%;
+	height: 75px;
+	width: 75px;
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.commentText {
+	float: left;
+	color: #000;
+	width: 100%;
+}
+
+.commentMeta {
+	float: left;
+	width: 100%;
+	color: #000;
+	text-align: right;
+}
+
+.commentMeta a {
+	color: #CCC;
+	text-decoration: none;
+}
+
+.commentMeta a:hover {
+	color: #000;
+}
+
+.commentDialog {
+	background: #DDD;
+	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
+		-webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
+		-moz-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
+	border: solid 1px rgba(0, 0, 0, 0.16);
+	color: #555;
+	overflow: hidden;
+}
+
+.commentDialog h1 {
+	margin: 10px;
+	font-family: "Titillium Web";
+	color: #F00;
+	text-shadow: 1px 1px 0px #AEAEAE;
+}
+
+.commentDialog form {
+	margin: 10px;
+}
+
+.commentDialog form p {
+	margin: 0;
+}
+
+.commentDialog form a {
+	color: #F00;
+	transition-property: color, background-color;
+		-webkit-transition-property: color, background-color;
+		-moz-transition-property: color, background-color;
+    transition-duration: 0.5s;
+    	-webkit-transition-duration: 0.5s;
+    	-moz-transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    	-webkit-transition-delay: 0.1s;
+    	-moz-transition-delay: 0.1s;
+}
+
+.commentDialog form a:hover {
+	color: #555;
+}
+
+.commentDialog form textarea {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+.commentDialog form .loginData {
+	margin-bottom: 10px;
+}
+
+.commentDialog form .btn {
+	font-family: "Gentium Book Basic";
+	text-decoration: none;
+	color: #555;
+}
+
+.commentDialog form input {
+	padding: 10px;
+	margin: 20px 0 10px 0;
+	float: right;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* Anpassung der Footer-Icons an die Bildschirmbreite
+----------------------------------------------
+*/
+
+@media (min-width: 0) and (max-width: 700px) {
+
+	.footer-links div img {
+		height: 100px;
+		width: 100px;
+	}
+
+}
+
+@media (min-width: 700px) {
+
+	.footer-links div img {
+		height: 200px;
+		width: 200px;
+	}
+
+}
+
+/* Anpassung der Footer-Lizenzen an die Bildschirmbreite
+----------------------------------------------
+*/
+
+@media (min-width: 0) and (max-width: 920px) {
+
+	.footer-licenses ul, .footer-licenses li {
+		list-style: square inside;
+	}
+
+	.footer-licenses strong {
+		font-weight: bold;
+		float: left;
+		width: 100%;
+	}
+
+	.footer-licenses strong:hover {
+		color: #F00;
+		cursor: pointer;
+	}
+
+	.article .attachment-thumbnail {
+		display: none;
+	}
+
+}
+
+@media (min-width: 920px) {
+
+	.footer-licenses ul, .footer-licenses li {
+		list-style: none;
+		float: left;
+	}
+
+	.footer-licenses strong {
+		font-weight: bold;
+		float: left;
+	}
+
+	.footer-licenses strong:hover {
+		color: #000;
+		cursor: default;
+	}
+
+}

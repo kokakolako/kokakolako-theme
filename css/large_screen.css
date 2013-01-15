@@ -1,0 +1,152 @@
+/* Large Screen (1060px - MAX)
+----------------------------------------------
+*/
+
+@media all and (min-width: 850px) {
+
+
+/* Tiles
+---------------------
+*/
+
+.tiles {
+	height: 420px;
+}
+
+.tiles-inner {
+	margin: 0 20px 20px 20px;
+	height: 400px;
+}
+
+.tile {
+	width: 25%;
+	height: 200px;
+}
+
+.tiles h1 a {
+	font-size: 1.2em;
+}
+
+/* Artikel
+---------------------
+*/
+
+.article {
+	margin: 0 20px 20px 20px;
+}
+
+.article h1 {
+	font-size: 4em;
+}
+
+/* Über mich
+---------------------
+*/
+
+.about {
+	width: 35%;
+	float: left;
+	color: #FFF;
+}
+
+.about > div {
+	margin: 20px 20px 0 20px;
+}
+
+/* Social-Media Integration
+---------------------
+*/
+
+.social {
+	width: 35%;
+	float: left;
+	color: #FFF;
+}
+
+.popularPosts {
+	width: 35%;
+	float: left;
+	color: #FFF;
+}
+
+/* Seitenleiste
+---------------------
+*/
+
+.sidebar {
+	width: 35%;
+	float: left;
+	margin-top: 5px;
+	overflow: hidden;
+}
+
+.main {
+	width: 65%;
+	float: left;
+	overflow: hidden;
+}
+
+/* Single Page Design
+---------------------
+*/
+
+.singlePage {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+}
+
+.singlePage .article {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.singlePage .post {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.singlePage .postTitle {
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 5em;
+}
+
+.singlePage .about {
+	width: 60%;
+	margin: 0 20%;
+}
+
+.singlePage .about > div {
+	margin: 0 0 20px 0;
+}
+
+.singlePage .post h2 {
+	font-size: 3em;
+}
+
+.singleMeta {
+	margin: 0 10% 30px 10%;
+}
+
+.singleMeta a {
+	font-size: 1.5em;
+}
+
+.commentList-wrapper {
+	margin: 0 auto 0 auto;
+	width: 60%;
+	overflow: hidden;
+}
+
+.commentDialog {
+	float: left;
+	width: 60%;
+	margin: 0 20% 40px 20%;
+}
+
+.commentDialog h1 {
+	font-size: 4em;
+}
+
+} /* <-- Ende des Media-Queries */

@@ -1,0 +1,33 @@
+/* Fallback zur Korrektur von Browsern ohne gutes Fontface-Rendering
+----------------------------------------------
+*/
+
+/* "Gentium Book Basic" Fallback
+-----------------------
+*/
+.no-fontface body, 
+.no-fontface .button {
+	font-family: Georgia, serif;
+}
+
+/* "Titillium Web" Fallback
+-----------------------
+*/
+.no-fontface .article h1,
+.no-fontface .article h2,
+.no-fontface .tile h1 a, 
+.no-fontface .postMeta,  
+.no-fontface .singleMeta,
+.no-fontface .date,
+.no-fontface .commentDialog h1 {
+	font-family: Arial, sans-serif;
+}
+
+/* "The Girl Next Door" Fallback
+-----------------------
+*/
+.no-fontface .about h2,
+.no-fontface .sideNav {
+	font-family: "Times Italic";
+}
+

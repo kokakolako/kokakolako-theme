@@ -1,0 +1,106 @@
+
+/* Smartphones (MIN - 480px)
+----------------------------------------------
+*/
+
+@media (min-width: 0) and (max-width: 480px)  {
+
+/* Tiles
+---------------------
+*/
+
+.tiles {
+	height: 220px;
+}
+
+.tiles-inner {
+	margin: 0 20px 20px 20px;
+	height: 200px;
+}
+
+.tile {
+	width: 50%;
+	height: 100px;
+}
+
+.tiles div:nth-child(8),
+.tiles div:nth-child(7),
+.tiles div:nth-child(6),
+.tiles div:nth-child(5) {
+	display: none;
+}
+
+/* Main
+---------------------
+*/
+
+.main {
+	margin: 0 auto 0 auto;
+	width: 90%;
+}
+
+/* Artikel Design
+---------------------
+*/
+
+.article {
+	margin-bottom: 20px;
+}
+
+.article h1 {
+	margin: 20px 5px 20px 5px;
+	font-size: 2.5em;
+}
+
+.article .postMeta {
+	display: none;
+}
+
+.about {
+	width: 100%;
+	float: left;
+	margin-bottom: 40px;
+	color: #FFF;
+}
+
+.about > div {
+	margin: 20px 20px 0 20px;
+}
+
+/* Single Page Design
+---------------------
+*/
+
+.singlePage {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+}
+
+.singlePage .about > div {
+	margin: 0;
+}
+
+.singleMeta {
+	margin: 0 0 30px 0;
+}
+
+.singleMeta a{
+font-size: 1em;
+}
+
+.commentList-wrapper {
+	margin: 0 30px 30px 30px;
+	overflow: hidden;
+}
+
+.commentDialog {
+	float: left;
+	margin: 0 20px 20px 20px;
+}
+
+.commentDialog h1 {
+	font-size: 2em;
+}
+
+} /* <-- Ende des Media-Queries */

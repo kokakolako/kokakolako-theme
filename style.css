@@ -1081,6 +1081,10 @@ ul, ol, li {
 	text-shadow: 1px 1px 0px #AEAEAE;
 }
 
+.commentDialog form {
+	padding: 0 20px;
+}
+
 .commentDialog form a {
 	color: #F00;
 	transition-property: color, background-color;
@@ -1099,13 +1103,15 @@ ul, ol, li {
 }
 
 .commentDialog form textarea {
-	max-width: 100%;
+	width: 100%;
+	float: left;
 }
 
 .commentDialog form .btn {
 	font-family: "Gentium Book Basic";
 	text-decoration: none;
 	color: #555;
+	width: auto;
 }
 
 /* Anpassung der Footer-Icons an die Bildschirmbreite
@@ -1122,11 +1128,12 @@ ul, ol, li {
 	.commentDialog .userdata {
 		width: 300px;
 		float: left;
+		margin: 0;
 	}
 
 	.commentDialog form input {
 		width: 280px;
-		margin: 10px;
+		margin: 10px 0 10px 0;
 		padding: 5px;
 	}
 
@@ -1141,12 +1148,12 @@ ul, ol, li {
 
 	.commentDialog .userdata {
 		width: 500px;
-		margin: 0 10px;
+		margin: 0;
 	}
 
 	.commentDialog form input {
 		width: 470px;
-		margin: 10px;
+		margin: 10px 0 10px 0;
 		padding: 5px;
 	}
 

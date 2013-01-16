@@ -1,18 +1,5 @@
 <?php get_header(); ?>                                        
 
-<!-- Tiles -->
-<!-- <nav class="tiles">
-	<div class="tiles-inner">		
-	<?php // $popular_posts = 1 ?>
-	<?php // $thumbQuery = new WP_Query( "orderby=comment_count&showposts=8" ); while ( $thumbQuery->have_posts() ) : $thumbQuery->the_post();?>	
-		<div class="tile tile<?php // echo $popular_posts; ?>">
-			<div><h1><a href="<?php // the_permalink() ?>"><?php the_title(); ?></a></h1></div>
-		</div>
-		<?php // $popular_posts++ ?>
-	<?php // endwhile; wp_reset_query();  ?>
-	</div>
-</nav> -->
-
 <!-- The main loop -->
 <div class="main">
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post();?>

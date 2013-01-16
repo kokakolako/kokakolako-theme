@@ -84,25 +84,6 @@ ul, ol, li {
 	overflow: hidden;
 }
 
-
-/* CSS3 Ease-Out wird durchgeführt
-----------------------------------------------
-Damit dieser Effekt wirkt muss zuvor 
-dem Ziel-Objekt folgender CSS3
-Transition Effekt hinzugefügt werden:
-  transition: opacity 1s ease-out;
-Nun kann mittels jQuery über 
-  addClass("ease-out") bzw.
-  removeClass("ease-out")
-das Ziel-Objekt Ein- und Ausgeblendet 
-werden.
-*/
-
-.ease-out {
-	height: auto;
-	opacity: 1;
-}
-
 .navbar ul > li {
 	list-style: none;
 }
@@ -180,66 +161,6 @@ werden.
 	margin: auto;
 	max-width: 900px;
 	max-height: 100px;
-}
-
-/* Tiles
-----------------------------------------------
-*/
-
-.tiles {
-	float: left;
-	width: 100%;
-}
-
-.tiles-inner {
-	margin: 0 20px 20px 20px;
-	box-shadow: 0 0 20px #555;
-		-moz-box-shadow: 0 0 20px #555;
-		-webkit-box-shadow: 0 0 20px #555;
-}
-
-.tile {
-	background: #F00;
-	float: left;
-}
-
-.tile:hover {
-	padding: 0;
-	float: left;
-	cursor: pointer;
-}
-
-.tile h1 {
-	position: relative;
-	text-align: right;
-	margin: 0 5px 0 5px;
-	width: auto;
-	cursor: pointer;
-}
-
-.tile h1 a {
-	color: rgba(1, 1, 1, 0.6);
-	text-decoration: none;
-	font-family: "Titillium Web";
-}
-
-.tile div {
-	background: rgba(1, 1, 1, 0);
-	width: 100%;
-	height: 100%;
-	transition-property: background-color;
-		-webkit-transition-property: background-color;
-		-moz-transition-property: background-color;
-	transition-duration: 1s;
-    	-webkit-transition-duration: 1s;
-    	-moz-transition-duration: 1s;
-    box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.3);
-    	-moz-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.3);
-			-webkit-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.3);
-}
-
-.tile div:hover {
-	background: rgba(1, 1, 1, 0.4);
 }
 
 /* Artikel

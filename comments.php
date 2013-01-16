@@ -9,7 +9,7 @@
                 <div class="comment-wrapper">
                     <div class="comment">
                         <div class="date">
-                            <?php comment_author() ?>&nbsp;
+                            <?php comment_author() ?>
                             <span>
                                 <?php comment_date('j.n.Y') ?> @ 
                                 <?php comment_time('H:i:s'); ?>

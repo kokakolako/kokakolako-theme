@@ -43,8 +43,6 @@ Cheers! Niklas Köhler, 15.11.2012
 		<meta name="viewport" content="width=device-width">
 
 	<!-- Stylesheets -->
-		<!-- Normalize.css -->
-			<link rel="stylesheet" href="http://kokakolako.de/wp-content/themes/kokakolako/css/fallback.css">
 		<!-- Default Stylesheet -->
 			<link rel="stylesheet" type="text/css" href="http://kokakolako.de/wp-content/themes/kokakolako/style.css" />
 		<!-- Large Screen (1060px - MAX) -->

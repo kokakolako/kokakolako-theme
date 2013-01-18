@@ -868,7 +868,7 @@ ul, ol, li {
 	position: absolute;
 }
 
-/* Single Page Meta Informations
+/* Single Page Meta Information
 ---------------------
 */
 
@@ -906,7 +906,7 @@ ul, ol, li {
 }
 
 /* Picture-Stack - Link zu meinem Portfolio
----------------------
+----------------------------------------------
 */
 
 .singlePage .article {
@@ -978,7 +978,7 @@ ul, ol, li {
 }
 
 /* Kommentare
----------------------
+----------------------------------------------
 */
 
 .commentList {
@@ -992,10 +992,6 @@ ul, ol, li {
 	width: 100%;
 	overflow: hidden;
 }
-
-/*	background: #DDD;
-	
-	color: #555; */
 
 .comment {
 	float: left;

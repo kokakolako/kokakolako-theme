@@ -11,7 +11,7 @@
 			<?php if(has_post_thumbnail()) { the_post_thumbnail(array('class' => 'thumbnail')); } ?>
 			<div class="post">
 				<?php the_excerpt() ?>
-				<a href="<?php the_permalink() ?>" class="btn">Weiterlesen &raquo;</a>
+				<a class="btn" href="<?php the_permalink() ?>">Weiterlesen &raquo;</a>
 			</div>
 	        <div class="postMeta">
 	        	<?php the_category( '' )?>
@@ -35,17 +35,17 @@
 <section class="social">
 	<div>
 		<div class="facebook">
-			<a onclick="window.open('https://www.facebook.com/sharer.php?u=http://kokakolako.de', 'facebook', 'toolbar=no, width=650, height=450'); return false;" href="http://www.facebook.com/sharer.php?u=http://kokakolako.de" id="facebook">
+			<a href="http://www.facebook.com/sharer.php?u=http://kokakolako.de" onclick="window.open('https://www.facebook.com/sharer.php?u=http://kokakolako.de', 'facebook', 'toolbar=no, width=650, height=450'); return false;">
 				<div></div>
 			</a>
 		</div>
 		<div class="twitter">
-			<a onclick="window.open('https://twitter.com/share?url=http://kokakolako.de', 'twitter', 'toolbar=no, width=650, height=450'); return false;" href="http://twitter.com/share?url=http://kokakolako.de">
+			<a href="http://twitter.com/share?url=http://kokakolako.de" onclick="window.open('https://twitter.com/share?url=http://kokakolako.de', 'twitter', 'toolbar=no, width=650, height=450'); return false;">
 				<div></div>
 			</a>
 		</div>
 		<div class="googleplus">
-			<a onclick="window.open('https://plus.google.com/share?url=http://kokakolako.de', 'plusone', 'toolbar=no, width=650, height=450'); return false;" href="https://plus.google.com/share?url=http://kokakolako.de">
+			<a href="https://plus.google.com/share?url=http://kokakolako.de" onclick="window.open('https://plus.google.com/share?url=http://kokakolako.de', 'plusone', 'toolbar=no, width=650, height=450'); return false;">
 				<div></div>
 			</a>
 		</div>

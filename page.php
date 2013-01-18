@@ -1,58 +1,74 @@
-<?php
+<?php get_header(); ?>
 
-  /**
-  *@desc A single blog post See page.php is for a page layout.
-  */
+<div class="content">
 
-  get_header();
-  
+  <div class="singlePage">
+    <?php if (have_posts()): while (have_posts()) : the_post();?>
+    <?php $image_id = get_post_thumbnail_id(); $image_url = wp_get_attachment_image_src($image_id,'full', true); ?>
+      <article class="article">
+        
+        <?php the_date('d.m.Y', '<div class="date">', '</div>'); ?>
+        <h1 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+        <div class="singleMeta">
+          <?php the_category( ' ' )?>
+        </div>
+        <div class="post">
+          <?php the_content(__('(mehr...)')); ?>
+        </div>
 
-  if (have_posts()) : while (have_posts()) : the_post();
-  ?>
-  <div class="main">
-    <div class="postWrapper" id="post-<?php the_ID(); ?>">
-  <?php the_date('d.m.Y', '<h2 class="date">', '</h2>'); ?>
-      <h1 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-      <div class="post"><?php the_content(__('(more...)')); ?></div>
-      <div id="socialshareprivacy"></div>
-      <p class="postMeta"><b>Kategorie(n): </b><?php the_category('-') . comments_popup_link(__('Kommentare (0)'), __('Kommentare (1)'), __('Kommentare (%)')) . edit_post_link(__('Edit')); ?></p>
+        <!-- Social-Media Integration -->
+        <div class="social">
+          <div>
+            <h2>Wenn dir der Artikel gefallen hat, dann teile ihn doch mit deinen Freunden</h2>            
+            <div>
+              <div class="facebook">
+                <a href="http://www.facebook.com/sharer.php?u=http://kokakolako.de" onclick="window.open('https://www.facebook.com/sharer.php?u=http://kokakolako.de', 'facebook', 'toolbar=no, width=650, height=450'); return false;">
+                  <div></div>
+                </a>
+              </div>
+              <div class="twitter">
+                <a href="http://twitter.com/share?url=http://kokakolako.de" onclick="window.open('https://twitter.com/share?url=http://kokakolako.de', 'twitter', 'toolbar=no, width=650, height=450'); return false;">
+                  <div></div>
+                </a>
+              </div>
+              <div class="googleplus">
+                <a href="https://plus.google.com/share?url=http://kokakolako.de" onclick="window.open('https://plus.google.com/share?url=http://kokakolako.de', 'plusone', 'toolbar=no, width=650, height=450'); return false;">
+                  <div></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <div class="about">
+      <div>
+        <h2>Über den Autor</h2>
+        <div class="stack">
+          <div class="portfolio-link">
+            <a href="#">Zu meinem Portfolio</a>
+          </div>    
+          <img src="http://kokakolako.de/wp-content/themes/kokakolako/img/profile2.jpg">          
+        </div>
+        <p>
+          Mein Name ist Niklas Köhler. Ich bin Schüler 
+          und blogge nebenbei unter dem Namen kokakolako.
+          Einige große Leidenschaften von mir sind Webdesign,
+          Programmieren und Freie Software.
+          Meine Themen reichen daher von Themen 
+          wie Webdesign und Linux, bishin zu anderen Themen wie zum Beispiel Historik.
+        </p>
+      </div>
     </div>
 
-	<?php
-
-  comments_template();
-  endwhile; else: ?>
-
-		<p>Ihre Eingabe konnte leider keine Treffer erzielen.</p>
-
-<?php endif; ?>  
+    <?php comments_template( '', true ); ?>
+    <?php endwhile ?>
+    <?php else: ?>
+      <article class="article" id="searchResult"><h1><?php wp_title('')?></h1><p><?php _e('Ihre Eingabe konnte leider keine Treffer erzielen.'); ?></p></article>
+    <?php endif; ?>
   </div>
 
-<script>
-    $(document).ready(function($){
-      if($('#socialshareprivacy').length > 0){
-        $('#socialshareprivacy').socialSharePrivacy(); 
-      }
-    });
-</script>
-
-<ol class="bcn">
-  <?php if ( function_exists('yoast_breadcrumb') ) {
-    yoast_breadcrumb('<li id="breadcrumbs">','</li>');
-  } ?>
-</ol>
 </div>
 
-<div class="articleSideContainer">
-<!-- Secondary Loop -->
-  <?php $myQuery = new WP_Query('showposts=6&offset=4'); while ($myQuery->have_posts()) : $myQuery->the_post();?>
-    <div class="article">
-      <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-      <p><a href="<?php the_permalink() ?>"><?php the_excerpt(); ?></a></p> 
-    </div>
-  <?php endwhile; wp_reset_query();  ?><div id="footer"><?php wp_footer(); ?></div>
-</div>
-</div>
-
-</body>
-</html>
+<?php get_footer(); ?>

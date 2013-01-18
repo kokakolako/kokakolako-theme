@@ -44,30 +44,30 @@ Cheers! Niklas Köhler, 15.11.2012
 
 	<!-- Stylesheets -->
 		<!-- Default Stylesheet -->
-			<link rel="stylesheet" type="text/css" href="http://kokakolako.de/wp-content/themes/kokakolako/style.css" />
+			<link href="http://kokakolako.de/wp-content/themes/kokakolako/style.css" rel="stylesheet" type="text/css" />
 		<!-- Large Screen (1060px - MAX) -->
-			<link rel="stylesheet" type="text/css" href="http://kokakolako.de/wp-content/themes/kokakolako/css/large_screen.css" />
+			<link href="http://kokakolako.de/wp-content/themes/kokakolako/css/large_screen.css" rel="stylesheet" type="text/css" />
 		<!-- Tablet (MIN - 1060px) -->
-			<link rel="stylesheet" type="text/css" href="http://kokakolako.de/wp-content/themes/kokakolako/css/tablet.css" />
+			<link href="http://kokakolako.de/wp-content/themes/kokakolako/css/tablet.css" rel="stylesheet" type="text/css" />
 		<!-- Smartphones (MIN - 480px) -->
-			<link rel="stylesheet" type="text/css" href="http://kokakolako.de/wp-content/themes/kokakolako/css/phone.css">
+			<link href="http://kokakolako.de/wp-content/themes/kokakolako/css/phone.css" rel="stylesheet" type="text/css">
 		<!-- Bootstrap -->
-			<link rel="stylesheet" type="text/css" href="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/css/bootstrap.css">
+			<link href="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 		<!-- Fallback.css -->
-			<link rel="stylesheet" href="http://kokakolako.de/wp-content/themes/kokakolako/css/fallback.css">
+			<link href="http://kokakolako.de/wp-content/themes/kokakolako/css/fallback.css" rel="stylesheet" type="text/css">
 
 	<!-- Favicon -->	
-		<link rel="shortcut icon" href="http://kokakolako.de/wp-content/themes/kokakolako/img/favicon.ico" />
+		<link href="http://kokakolako.de/wp-content/themes/kokakolako/img/favicon.ico" rel="shortcut icon" />
 
 	<!-- Alexa Verification ID -->	
 		<meta name="alexaVerifyID" content="Zpz-HE6WWZ5V75k0utkI140LqKc">
 
 	<!-- Linked Files -->
-		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
-		<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
-		<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-		<link rel="image_src" href="http://kokakolako.de/wp-content/themes/kokakolako/img/logo.png" />
+		<link href="<?php bloginfo('rss2_url'); ?>" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+		<link href="<?php bloginfo('rss_url'); ?>" rel="alternate" type="text/xml" title="RSS .92" />
+		<link href="<?php bloginfo('atom_url'); ?>" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+		<link href="<?php bloginfo('pingback_url'); ?>" rel="pingback" />
+		<link href="http://kokakolako.de/wp-content/themes/kokakolako/img/logo.png" rel="image_src" />
 
 	<!-- Google Webfonts -->
 		<link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -82,7 +82,7 @@ Cheers! Niklas Köhler, 15.11.2012
 	<div class="navbar navbar-inverse navbar-fixed-top">
 	              <div class="navbar-inner">
 	                <div class="container-fluid">
-	                	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	                	<button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" type="button">
 	            			<span class="icon-bar"></span>
 	            			<span class="icon-bar"></span>
 	            			<span class="icon-bar"></span>
@@ -91,7 +91,7 @@ Cheers! Niklas Köhler, 15.11.2012
 	                    <ul class="nav">
 	                      <li><a href="http://kokakolako.de">Startseite</a></li>
 	                      <li class="dropdown">
-	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategorien <b class="caret"></b></a>
+	                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Kategorien <b class="caret"></b></a>
 	                        <ul class="dropdown-menu">
 	                        	<?php wp_list_categories('title_li='); ?>
 	                        </ul>

@@ -1,3 +1,3 @@
 <form class="navbar-search pull-right">
-    <input type="search" class="search-query" placeholder="Suchen">
+    <input class="search-query" type="search" placeholder="Suchen">
 </form>

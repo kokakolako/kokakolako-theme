@@ -39,9 +39,9 @@
                     <p class="loginData"><?php printf(__('Angemeldet als %s'), '<a href="'.get_option('siteurl').'/wp-admin/profile.php">'.$user_identity.'</a>'); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" class="btn" title="<?php _e('Logout') ?>"><?php _e('Abmelden'); ?></a></p>
                 <?php else : ?>
                 <div class="userdata">
-                    <input type="text" name="author" class="author" placeholder="Name" value="<?php echo $comment_author; ?>" tabindex="1" />
-                    <input type="text" name="email" class="email" placeholder="E-Mail" value="<?php echo $comment_author_email; ?>" tabindex="2" />       
-                    <input type="text" name="url" class="url" placeholder="Webseite" value="<?php echo $comment_author_url; ?>" tabindex="3" />
+                    <input class="author" type="text" name="author" placeholder="Name" value="<?php echo $comment_author; ?>" tabindex="1" />
+                    <input class="email" type="text" name="email" placeholder="E-Mail" value="<?php echo $comment_author_email; ?>" tabindex="2" />       
+                    <input class="url" type="text" name="url" placeholder="Webseite" value="<?php echo $comment_author_url; ?>" tabindex="3" />
                 </div>
                 <?php endif; ?>
                 <div>

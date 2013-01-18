@@ -19,7 +19,7 @@
 	<div class="footer-licenses">
 		<strong>Lizenzinformationen</strong>
 		<ul>
-			<li><i class="icon-retweet"></i> Inhalte: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/de/">CC BY-NC</a></li>
+			<li><i class="icon-retweet"></i> Inhalte: <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/de/" rel="license">CC BY-NC</a></li>
 			<li><i class="icon-picture"></i> Kokakolako-Font: <a href="http://floodfonts.com/freefont/freefont.html">&copy;2008 Floodfonts</a></li>
 			<li><i class="icon-picture"></i> Portfolio-Icon: <a href="http://icomoon.io">CC BY-SA Icomoon.io</a></li>
 		</ul>

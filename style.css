@@ -48,12 +48,17 @@ table {
 	text-align:center;
 }
 
-table, tr, td, th {
+table,
+tr,
+td,
+th {
 	margin:0;
 	padding:0;
 }
 
-table tr, table td, table th {
+table tr,
+table td,
+table th {
 	border:1px solid #000;
 }
 
@@ -70,7 +75,9 @@ blockquote {
 	text-shadow: 1px 1px 0px #AEAEAE;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -382,7 +389,9 @@ ul, ol, li {
 	font-family: "The Girl Next Door"
 }
 
-.facebook, .twitter, .googleplus {
+.facebook,
+.twitter,
+.googleplus {
 	width: 33%;
 	float: left;
 	margin: 0 auto;
@@ -396,7 +405,9 @@ ul, ol, li {
     	-moz-transition-duration: 1s;
 }
 
-.facebook:hover, .twitter:hover, .googleplus:hover {
+.facebook:hover,
+.twitter:hover,
+.googleplus:hover {
 	background: #555;
 	cursor: pointer;
 }
@@ -416,7 +427,9 @@ ul, ol, li {
 
 @media (min-width: 930px) {
 
-	.facebook a div, .twitter a div, .googleplus a div {
+	.facebook a div,
+	.twitter a div,
+	.googleplus a div {
 		width: 100px;
 		height: 100px;
 		margin: 0 auto;
@@ -438,7 +451,9 @@ ul, ol, li {
 
 @media all and (min-width: 480px) and (max-width: 930px) {
 
-	.facebook a div, .twitter a div, .googleplus a div {
+	.facebook a div,
+	.twitter a div,
+	.googleplus a div {
 		width: 50px;
 		height: 50px;
 		margin: 0 auto;
@@ -536,7 +551,7 @@ ul, ol, li {
 	overflow: hidden;
 }
 
-.postMeta a{
+.postMeta a {
 	float: left;
 	color: #FFF;
 	margin: 5px;
@@ -557,7 +572,7 @@ ul, ol, li {
     	-moz-transition-delay: 0.1s;
 }
 
-.postMeta a:hover{
+.postMeta a:hover {
 	color: #FFF;
 	background-color: #555;
 }
@@ -799,7 +814,8 @@ ul, ol, li {
 	border-radius: 10px;
 }
 
-.footer-links div:first-child img:hover, .footer-links div:last-child img:hover {
+.footer-links div:first-child img:hover,
+.footer-links div:last-child img:hover {
 	cursor: pointer;
 }
 

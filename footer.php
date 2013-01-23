@@ -30,14 +30,8 @@
 <!-- JavaScript Dateien -->
 	<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<!-- jQuery UI -->
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
 	<!-- Functions.js -->
 		<script src="http://kokakolako.de/wp-content/themes/kokakolako/js/functions.js"></script>
-	<!-- slimScroll -->
-		<script src="http://kokakolako.de/wp-content/themes/kokakolako/js/slimScroll/slimScroll.min.js"></script>
-	<!-- 2-Klicks-für-mehr-Datenschutz -->
-		<script src="http://kokakolako.de/wp-content/themes/kokakolako/js/socialshareprivacy/jquery.socialshareprivacy.js"></script>
 	<!-- Bootstrap -->
 		<script src="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/js/bootstrap.js"></script>
 	<!-- Bootstrap Tooltips-JSPlugin -->

@@ -33,7 +33,7 @@ wenn ihr fragen habt.
 
 Cheers! Niklas Köhler, 15.11.2012
 
--->     
+-->
 
 <head>
 	<!-- Global Attributs -->
@@ -96,6 +96,7 @@ Cheers! Niklas Köhler, 15.11.2012
 	                        	<?php wp_list_categories('title_li='); ?>
 	                        </ul>
 	                      </li>
+	                      <li><a href="https://github.com/kokakolako">GitHub</a></li>
 	                      <li><a href="http://twitter.com/kokakolako">@kokakolako</a></li>
 	                    </ul>
 	                    <?php get_search_form(); ?>

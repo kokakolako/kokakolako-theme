@@ -63,8 +63,8 @@
 			Einige große Leidenschaften von mir sind Webdesign,
 			Programmieren und Freie Software.
 			Meine Themen reichen daher von Themen 
-			wie Webdesign und Linux, bishin zu anderen Themen wie 
-			zum Beispiel Historik.
+			wie Webdesign und Linux und Themen, die mir sonst so in den
+			Sinn kommen.
 		</p>
 	</div>
 </section>

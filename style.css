@@ -995,139 +995,6 @@ li {
 		-o-transform: rotate(0deg);
 }
 
-/* Kommentare
-----------------------------------------------
-*/
-
-.commentList {
-	float: left;
-	width: 100%;
-	margin: 30px 0 20px 0;
-	overflow: hidden;
-}
-
-.comment-wrapper {
-	width: 100%;
-	overflow: hidden;
-}
-
-.comment {
-	float: left;
-	background: #DDD;
-	width: 90%;
-	margin: 0 5% 20px 5%;
-	min-height: 100px;
-	overflow: hidden;
-	border: solid 1px rgba(0, 0, 0, 0.16);
-	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
-		-webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
-		-moz-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
-}
-
-.comment p {
-	margin: 20px;
-	padding: 0;
-}
-
-.comment .date {
-	font-size: 1.5em;
-	text-align: left;
-	padding: 5px;
-}
-
-.comment .date span {
-	font-size: 0.6em;
-	color: #555;
-}
-
-
-.avatar {
-	padding: 0;
-	float: left;
-	margin: 5px;
-}
-
-.avatar img {
-	border-radius: 50%;
-	height: 75px;
-	width: 75px;
-	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-	    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-	    -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-}
-
-.commentText {
-	float: left;
-	color: #000;
-	width: 100%;
-}
-
-.commentMeta {
-	float: left;
-	width: 100%;
-	color: #000;
-	text-align: right;
-}
-
-.commentMeta a {
-	color: #CCC;
-	text-decoration: none;
-}
-
-.commentMeta a:hover {
-	color: #000;
-}
-
-.commentDialog {
-	background: #DDD;
-	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
-		-webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
-		-moz-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
-	border: solid 1px rgba(0, 0, 0, 0.16);
-	color: #555;
-	overflow: hidden;
-}
-
-.commentDialog h1 {
-	margin: 10px;
-	font-family: "Titillium Web";
-	color: #F00;
-	text-shadow: 1px 1px 0px #AEAEAE;
-}
-
-.commentDialog form {
-	padding: 0 20px;
-}
-
-.commentDialog form a {
-	color: #F00;
-	transition-property: color, background-color;
-		-webkit-transition-property: color, background-color;
-		-moz-transition-property: color, background-color;
-    transition-duration: 0.5s;
-    	-webkit-transition-duration: 0.5s;
-    	-moz-transition-duration: 0.5s;
-    transition-delay: 0.1s;
-    	-webkit-transition-delay: 0.1s;
-    	-moz-transition-delay: 0.1s;
-}
-
-.commentDialog form a:hover {
-	color: #555;
-}
-
-.commentDialog form textarea {
-	width: 100%;
-	float: left;
-}
-
-.commentDialog form .btn {
-	font-family: "Gentium Book Basic";
-	text-decoration: none;
-	color: #555;
-	width: auto;
-}
-
 /* Anpassung der Footer-Icons an die Bildschirmbreite
 ----------------------------------------------
 */
@@ -1139,18 +1006,6 @@ li {
 		width: 100px;
 	}
 
-	.commentDialog .userdata {
-		width: 300px;
-		float: left;
-		margin: 0;
-	}
-
-	.commentDialog form input {
-		width: 280px;
-		margin: 10px 0 10px 0;
-		padding: 5px;
-	}
-
 }
 
 @media (min-width: 700px) {
@@ -1158,17 +1013,6 @@ li {
 	.footer-links div img {
 		height: 200px;
 		width: 200px;
-	}
-
-	.commentDialog .userdata {
-		width: 500px;
-		margin: 0;
-	}
-
-	.commentDialog form input {
-		width: 470px;
-		margin: 10px 0 10px 0;
-		padding: 5px;
 	}
 
 }

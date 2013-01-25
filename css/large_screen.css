@@ -133,20 +133,4 @@
 	font-size: 1.5em;
 }
 
-.commentList-wrapper {
-	margin: 0 auto 0 auto;
-	width: 60%;
-	overflow: hidden;
-}
-
-.commentDialog {
-	float: left;
-	width: 60%;
-	margin: 0 20% 40px 20%;
-}
-
-.commentDialog h1 {
-	font-size: 4em;
-}
-
 } /* <-- Ende des Media-Queries */

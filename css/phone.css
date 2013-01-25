@@ -89,18 +89,4 @@
 font-size: 1em;
 }
 
-.commentList-wrapper {
-	margin: 0 30px 30px 30px;
-	overflow: hidden;
-}
-
-.commentDialog {
-	float: left;
-	margin: 0 20px 20px 20px;
-}
-
-.commentDialog h1 {
-	font-size: 2em;
-}
-
 } /* <-- Ende des Media-Queries */

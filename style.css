@@ -28,6 +28,7 @@ body {
 }
 
 div {
+	overflow: hidden;
 	margin: 0;
 	padding: 0;
 }
@@ -80,7 +81,7 @@ ol,
 li {
 	margin: 0;
 	padding: 0;
-	list-style: none;
+	float: none;
 }
 
 .hr {
@@ -183,11 +184,6 @@ li {
 	padding: 10px;
 }
 
-.post p {
-	font-size: 1.4em;
-	margin: 5px 0;
-}
-
 .article {
 	box-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1);
 		-webkit-box-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 1px 1px 0px rgba(255, 255, 255, 1);
@@ -198,6 +194,7 @@ li {
 	background: #E6E6E6;
 	float: left;
 	overflow: hidden;
+	font-size: 1.4em;
 	transition-property: box-shadow;
 		-webkit-transition-property: box-shadow;
 		-moz-transition-property: box-shadow;
@@ -279,8 +276,12 @@ li {
 	font-family: "Titillium Web";
 }
 
-.article ul, ol, li {
+.article ul, .article ol, .article li {
 	list-style:	square inside;
+}
+
+.article p {
+	margin: 5px 0;
 }
 
 .article a:hover {
@@ -767,6 +768,15 @@ li {
 
 .tint:hover:before {
 	background: none;
+}
+
+/* Comments (DISQUS)
+----------------------------------------------
+*/
+
+.comments {
+	width: 60%;
+	margin: 0 20%;
 }
 
 /* Footer

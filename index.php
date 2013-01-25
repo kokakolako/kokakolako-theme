@@ -75,12 +75,10 @@
 		<h2>Populäre Artikel</h2>
 		<ul>	
 		<!-- The 10 most commented post's--> 	
-		<?php $popular_posts = 1 ?>
 		<?php $thumbQuery = new WP_Query( "orderby=comment_count&showposts=10" ); while ( $thumbQuery->have_posts() ) : $thumbQuery->the_post();?>	
 			<li>
 				<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 			</li>
-			<?php $popular_posts++ ?>
 		<?php endwhile; wp_reset_query();  ?>
 		</ul>
 	</div>

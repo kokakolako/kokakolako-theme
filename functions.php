@@ -3,6 +3,10 @@
 // Add RSS links to <head> section
 automatic_feed_links();
 
+// Prevent replacement of comment count (DISQUS)
+remove_filter('comments_number', 'dsq_comments_text');
+remove_filter('get_comments_number', 'dsq_comments_number');
+remove_action('loop_end', 'dsq_loop_end');
 
 // Remove rel attribute from the category list
 function remove_category_list_rel($output)

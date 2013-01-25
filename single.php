@@ -42,6 +42,10 @@
 
       </article>
 
+      <div class="comments">
+        <?php comments_template(); ?>
+      </div>
+
       <div class="about">
       <div>
         <h2>Über den Autor</h2>
@@ -62,7 +66,6 @@
       </div>
     </div>
 
-    <?php comments_template( '', true ); ?>
     <?php endwhile ?>
     <?php else: ?>
       <article class="article" id="searchResult"><h1><?php wp_title('')?></h1><p><?php _e('Ihre Eingabe konnte leider keine Treffer erzielen.'); ?></p></article>

@@ -2,7 +2,7 @@
 ----------------------------------------------
 */
 
-@media all and (min-width: 480px) and (max-width: 850px)  {
+@media all and (min-width: 480px) and (max-width: 1000px)  {
 
 /* Tiles
 ---------------------
@@ -48,7 +48,6 @@
 
 .article h1 {
 	margin: 0px;
-	font-size: 4em;
 }
 
 .about {
@@ -89,10 +88,6 @@
 	width: 100%;
 	float: left;
 	margin-top: 5px;
-}
-
-.singleMeta a{
-	font-size: 1.5em;
 }
 
 /* Seitenleiste

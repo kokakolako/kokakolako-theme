@@ -98,6 +98,14 @@ li {
 ----------------------------------------------
 */
 
+@media (max-width: 979px) {
+
+	.navbar-fixed-top {
+    margin-bottom: 0;
+  }
+
+}
+
 @media (min-width: 980px) {
 	
 	.header {
@@ -332,6 +340,10 @@ li {
 	padding: 0;
 }
 
+.social h2 {
+	border-bottom: 2px;
+}
+
 .social > div {
 	margin: 0 20px;
 	overflow: hidden;
@@ -413,7 +425,7 @@ li {
 	}
 
 	.googleplus a div {
-		background: url(http://kokakolako.de/wp-content/themes/kokakolako/img/social-media/plusone.png);
+		background: url(http://kokakolako.de/wp-content/themes/kokakolako/img/social-media/googleplus.png);
 	}
 
 }
@@ -437,7 +449,7 @@ li {
 	}
 
 	.googleplus a div {
-		background: url(http://kokakolako.de/wp-content/themes/kokakolako/img/social-media/plusone_small.png);
+		background: url(http://kokakolako.de/wp-content/themes/kokakolako/img/social-media/googleplus_small.png);
 	}
 
 }
@@ -517,12 +529,13 @@ li {
 	font-family: "Titillium Web";
 	width: 100%;
 	overflow: hidden;
+	margin: 5px;
 }
 
 .postMeta a {
 	float: left;
 	color: #FFF;
-	margin: 5px;
+	margin: 0 5px;
 	text-decoration: none;
 	background: #F00;
 	border-radius: 5px;
@@ -546,40 +559,6 @@ li {
 
 .postMeta > ul li{
 	list-style: none;
-}
-
-.commentCounter {
-	font-family: sans-serif;
-	float: right;
-	background-color: #F00;
-	border-bottom-left-radius: 5px;
-	border-top-left-radius: 5px;
-	margin-top: 5px;
-	transition-property: background-color;
-		-webkit-transition-property: background-color;
-		-moz-transition-property: background-color;
-    transition-duration: 0.5s;
-    	-webkit-transition-duration: 0.5s;
-    	-moz-transition-duration: 0.5s;
-    transition-delay: 0.1s;
-    	-webkit-transition-delay: 0.1s;
-    	-moz-transition-delay: 0.1s;
-    box-shadow: 1px 1px 0px #AEAEAE;
-}
-
-.commentCounter:hover {
-	background-color: #555;
-	cursor: pointer;
-}
-
-.commentCounter a {
-	background-color: transparent;
-	margin: 0 10px 0 10px;
-	box-shadow: none;
-}
-
-.commentCounter a:hover {
-	background-color: transparent;
 }
 
 /* Sidebar

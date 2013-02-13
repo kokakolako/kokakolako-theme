@@ -34,7 +34,11 @@
 		<script src="http://kokakolako.de/wp-content/themes/kokakolako/js/functions.js"></script>
 	<!-- Bootstrap -->
 		<script src="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/js/bootstrap.js"></script>
-	<!-- Bootstrap Tooltips-JSPlugin -->
+	<!-- Bootstrap Collapse Plugin -->
+		<script src="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/js/bootstrap-collapse.js"></script>
+	<!-- Bootstrao Dropdown Plugin -->
+		<script src="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/js/bootstrap-dropdown.js"></script>
+	<!-- Bootstrap Tooltips Plugin -->
 		<script src="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/js/bootstrap-tooltip.js"></script>
 	<!-- Modernizr Fontface-Fallback -->
 		<script src="http://kokakolako.de/wp-content/themes/kokakolako/js/modernizr/modernizr-fontface.js"></script>

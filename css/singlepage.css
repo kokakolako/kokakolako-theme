@@ -1,0 +1,167 @@
+/* Single Page Design
+---------------------------------------------
+*/
+
+/* Single Page Article Layout
+---------------------
+*/
+
+.singlePage .postTitle {
+	margin-bottom: 0;
+}
+
+.singlePage .post {
+	background: none;
+}
+
+.singlePage .about {
+	margin: 0 10px 20px 0;
+}
+
+.singlePage .social {
+	margin-bottom: 20px;
+}
+
+.singlePage .about h2 {
+	color: #FFF;
+}
+
+.singlePage .about img {
+	width: 180px;
+	height: 180px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+/* Single Page Meta Information
+---------------------
+*/
+
+.singleMeta {
+	display: block;
+	width: 100%;
+	float: left;
+	color: #FFF;
+	font-family: "Titillium Web";
+}
+
+.singleMeta a{
+	float: left;
+	color: #FFF;
+	margin: 5px;
+	text-decoration: none;
+	background: #F00;
+	border-radius: 5px;
+	box-shadow: 1px 1px 0px #AEAEAE;
+	padding: 5px;
+	transition-property: background;
+		-webkit-transition-property: background;
+		-moz-transition-property: background;
+    transition-duration: 0.5s;
+    	-webkit-transition-duration: 0.5s;
+    	-moz-transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    	-webkit-transition-delay: 0.1s;
+    	-moz-transition-delay: 0.1s;
+}
+
+.singleMeta a:hover{
+	color: #FFF;
+	background: #555;
+}
+
+/* Picture-Stack - Link zu meinem Portfolio
+----------------------------------------------
+*/
+
+.singlePage .article {
+	background: #DDD;
+	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
+		-webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.05), 1px 1px 0px rgba(255, 255, 255, 1);
+		-moz-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.05), 1px 1px 0px rgba(255,255,255,1);
+}
+
+.singlePage .portfolio-link {
+	width: 180px;
+	height: 180px;
+	border: 10px solid #FFF;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	background: #FFF;
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	    -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	transition-property: transform, margin;
+		-webkit-transition-property: transform, margin;
+		-moz-transition-property: margin, transform;
+    transition-duration: 0.5s;
+	    -webkit-transition-duration: 0.5s;
+	    -moz-transition-duration: 0.5s;
+}
+
+.singlePage .stack {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	float: left;
+	margin: 5px 10px 0 0;
+	padding: 0;
+	border: none;
+	box-shadow: none;
+}
+
+.singlePage .portfolio-link {
+	text-align: right;
+}
+
+.singlePage .portfolio-link a {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.singlePage .stack a {
+	text-decoration: none;
+	color: #555;
+}
+
+.singlePage .stack a:hover {
+	color: #F00;
+}
+
+.singlePage .about .stack:hover .portfolio-link {
+	margin-left: 150px;
+	transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+}
+
+.singlePage .post {
+	padding: 10px;
+}
+
+.singlePage .btn {
+	background: #DDD;
+}
+
+.singlePage .social {
+	margin: 0;
+	width: 100%;
+}
+
+.singlePage .social > div {
+	margin: 0 20px;
+}
+
+.singlePage .social > div h2 {
+	margin: 0;
+	padding: 5px 0;
+	color: #555;
+	font-family: "The Girl Next Door"
+}

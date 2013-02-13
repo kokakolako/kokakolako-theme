@@ -43,6 +43,12 @@ Cheers! Niklas Köhler, 15.11.2012
 		<meta name="viewport" content="width=device-width">
 
 	<!-- Stylesheets -->
+		<!-- Bootstrap -->
+			<link href="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<!-- Bootstrap Responsive -->
+			<link href="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+		<!-- Fallback.css -->
+			<link href="http://kokakolako.de/wp-content/themes/kokakolako/css/fallback.css" rel="stylesheet" type="text/css">
 		<!-- Default Stylesheet -->
 			<link href="http://kokakolako.de/wp-content/themes/kokakolako/style.css" rel="stylesheet" type="text/css" />
 		<!-- Large Screen (1060px - MAX) -->
@@ -51,10 +57,6 @@ Cheers! Niklas Köhler, 15.11.2012
 			<link href="http://kokakolako.de/wp-content/themes/kokakolako/css/tablet.css" rel="stylesheet" type="text/css" />
 		<!-- Smartphones (MIN - 480px) -->
 			<link href="http://kokakolako.de/wp-content/themes/kokakolako/css/phone.css" rel="stylesheet" type="text/css">
-		<!-- Bootstrap -->
-			<link href="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-		<!-- Fallback.css -->
-			<link href="http://kokakolako.de/wp-content/themes/kokakolako/css/fallback.css" rel="stylesheet" type="text/css">
 
 	<!-- Favicon -->	
 		<link href="http://kokakolako.de/wp-content/themes/kokakolako/img/favicon.ico" rel="shortcut icon" />

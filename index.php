@@ -15,11 +15,6 @@
 			</div>
 	        <div class="postMeta">
 	        	<?php the_category( '' )?>
-	        	<div class="commentCounter">
-	        		<a href="<?php comments_link() ?>" title="Kommentare anzeigen">
-	        			<?php comments_number( '0', '1', '%') ?>
-	        		</a>
-	        	</div>
 	        </div>
 	    </article>
 	<?php endwhile ?>

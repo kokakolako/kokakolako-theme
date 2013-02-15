@@ -68,10 +68,15 @@ textarea {
 }
 
 blockquote {
-	font-weight: bold;
 	font-style: italic;
 	margin: 0 50px;
-	text-shadow: 1px 1px 0px #AEAEAE;
+	overflow: hidden;
+	color: #555;
+}
+
+blockquote p {
+	font-size: 1.4rem;
+	font-weight: bold;
 }
 
 ul,
@@ -615,6 +620,7 @@ li {
 	padding: 5px;
 	background: #E6E6E6;
 	border: solid 1px rgba(0, 0, 0, 0.16);
+	border-radius: 0;
 	box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.7), 1px 1px 0px rgba(255, 255, 255, 0.7);
 			-webkit-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.7), 1px 1px 0px rgba(255, 255, 255, 0.7);
 			-moz-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.7), 1px 1px 0px rgba(255, 255, 255, 0.7);
@@ -809,7 +815,8 @@ li {
 */
 
 .singlePage .postTitle {
-	margin-bottom: 0;
+	margin-bottom: 1rem;
+	font-size: 5rem;
 }
 
 .singlePage .post {

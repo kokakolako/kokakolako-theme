@@ -20,7 +20,6 @@
 		<strong>Lizenzinformationen</strong>
 		<ul>
 			<li><i class="icon-retweet"></i> Inhalte: <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/de/" rel="license">CC BY-NC</a></li>
-			<li><i class="icon-picture"></i> Kokakolako-Font: <a href="http://floodfonts.com/freefont/freefont.html">&copy;2008 Floodfonts</a></li>
 			<li><i class="icon-picture"></i> Portfolio-Icon: <a href="http://icomoon.io">CC BY-SA Icomoon.io</a></li>
 		</ul>
 	</div>
@@ -30,18 +29,24 @@
 <!-- JavaScript Dateien -->
 	<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<!-- Functions.js -->
-		<script src="http://kokakolako.de/wp-content/themes/kokakolako/js/functions.js"></script>
 	<!-- Bootstrap -->
 		<script src="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/js/bootstrap.js"></script>
 	<!-- Bootstrap Collapse Plugin -->
 		<script src="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/js/bootstrap-collapse.js"></script>
-	<!-- Bootstrao Dropdown Plugin -->
+	<!-- Bootstrap Dropdown Plugin -->
 		<script src="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/js/bootstrap-dropdown.js"></script>
 	<!-- Bootstrap Tooltips Plugin -->
 		<script src="http://kokakolako.de/wp-content/themes/kokakolako/lib/bootstrap/js/bootstrap-tooltip.js"></script>
 	<!-- Modernizr Fontface-Fallback -->
 		<script src="http://kokakolako.de/wp-content/themes/kokakolako/js/modernizr/modernizr-fontface.js"></script>
+	<!-- Waypoints.js -->
+		<script src="http://kokakolako.de/wp-content/themes/kokakolako/lib/waypoints/waypoints.min.js"></script>
+	<!--  Waypoints.js - Shortcut: Sticky -->
+		<script src="http://kokakolako.de/wp-content/themes/kokakolako/lib/waypoints/waypoints-sticky.min.js"></script>
+	<!-- Functions.js -->
+		<script src="http://kokakolako.de/wp-content/themes/kokakolako/js/functions.js"></script>
+
+
 	
 	<?php wp_footer(); ?>
 </body>

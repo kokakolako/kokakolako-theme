@@ -43,7 +43,7 @@ h1 {
 */
 
 .about {
-	width: 35%;
+	width: 100%;
 	float: left;
 	color: #FFF;
 }
@@ -57,13 +57,11 @@ h1 {
 */
 
 .social {
-	width: 35%;
 	float: left;
 	color: #FFF;
 }
 
 .popularPosts {
-	width: 35%;
 	float: left;
 	color: #FFF;
 }
@@ -75,7 +73,6 @@ h1 {
 .sidebar {
 	width: 35%;
 	float: left;
-	margin-top: 5px;
 	overflow: hidden;
 }
 

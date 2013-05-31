@@ -2,11 +2,23 @@ $(function () {
 
 	kokakolako.setRatio();
 
-	if ( ( $(".sidebar ul").children() ).length <= 0) {
-		$(".sidebar").css("display","none");
-	}
-	
 	$(".footer-links div a img").tooltip();
+
+	if ( document.documentElement.clientWidth >= 1000 ) {
+
+		var navbar = $(".navbar"),
+			sidebar = $(".sidebar");
+
+		sidebar.waypoint({
+			offset: function () {
+				return navbar.height() + 20;
+			},
+			handler: function(event) {
+				sidebar.toggleClass("sticky");
+			}
+		});
+
+	}
 
 });
 

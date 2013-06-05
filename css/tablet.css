@@ -116,4 +116,14 @@ body {
 	margin-top: 5px;
 }
 
+/*  Footer
+---------------------
+*/
+
+footer .quote p {
+	max-width: 50%;
+	margin: 0 30%;
+	font-size: 1rem;
+}
+
 } /* <-- Ende des Media-Queries */

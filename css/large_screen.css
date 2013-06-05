@@ -61,11 +61,6 @@ h1 {
 	color: #FFF;
 }
 
-.popularPosts {
-	float: left;
-	color: #FFF;
-}
-
 /* Seitenleiste
 ---------------------
 */
@@ -119,6 +114,12 @@ h1 {
 
 .singleMeta {
 	margin: 0 10% 30px 10%;
+}
+
+footer .quote p {
+	max-width: 40%;
+	margin: 0 30%;
+	font-size: 1.8rem;
 }
 
 } /* <-- Ende des Media-Queries */
